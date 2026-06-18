@@ -184,7 +184,7 @@ class TBBTApp {
                 <div class="media-card" style="display: flex; flex-direction: column;">
                     <div class="media-img-wrapper">
                         <img src="${imgUrl}" class="media-img" alt="${ep.name}" loading="lazy">
-                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">
+                        <div style="position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.8); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; font-weight: bold;">
                             S${ep.season} E${ep.number}
                         </div>
                     </div>
@@ -195,7 +195,7 @@ class TBBTApp {
                             <span class="rating-badge">⭐ ${ep.imdbRating || 'N/A'}</span>
                         </div>
                         <p class="text-secondary" style="font-size: 0.85rem; line-height: 1.5; margin-bottom: 10px; flex: 1;">${desc.substring(0, 150)}...</p>
-                        ${ep.trivia ? `<div style="font-size: 0.8rem; color: var(--accent-blue); padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1);"><i>Trivia: ${ep.trivia}</i></div>` : ''}
+                        ${ep.trivia ? `<div style="font-size: 0.8rem; color: var(--accent-blue); padding-top: 10px; border-top: 1px solid var(--border-subtle);"><i>Trivia: ${ep.trivia}</i></div>` : ''}
                     </div>
                 </div>
             `;

@@ -13,6 +13,10 @@
   --text-primary: #111827;
   --text-secondary: #4b5563;
   --text-muted: #9ca3af;
+  
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --hero-overlay-mid: rgba(249, 250, 251, 0.4);
+  --hero-overlay-end: rgba(249, 250, 251, 0.1);
 }
 
 [data-theme="dark"] {
@@ -25,6 +29,10 @@
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
+  
+  --border-subtle: rgba(255, 255, 255, 0.1);
+  --hero-overlay-mid: rgba(10, 10, 12, 0.4);
+  --hero-overlay-end: rgba(10, 10, 12, 0.1);
 }
 
   /* Show Accents (Comic Book inspired) */
@@ -90,7 +98,7 @@ h1, h2, h3, h4, h5 {
   width: 100%;
   background-color: var(--bg-transparent);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid var(--border-subtle);
   position: fixed;
   top: 0;
   left: 0;
@@ -199,7 +207,7 @@ main {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(0deg, var(--bg-base) 0%, rgba(10,10,12,0.4) 50%, rgba(10,10,12,0.1) 100%);
+  background: linear-gradient(0deg, var(--bg-base) 0%, var(--hero-overlay-mid) 50%, var(--hero-overlay-end) 100%);
 }
 
 .hero-content {
@@ -338,7 +346,7 @@ main {
 
 select, input {
   background: var(--bg-elevated);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid var(--border-subtle);
   color: var(--text-primary);
   padding: var(--space-sm) var(--space-md);
   border-radius: var(--radius-md);
