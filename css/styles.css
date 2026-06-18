@@ -35,6 +35,7 @@
   --hero-overlay-end: rgba(10, 10, 12, 0.1);
 }
 
+:root {
   /* Show Accents (Comic Book inspired) - Adjusted for WCAG contrast */
   --accent-red: #fb7185;     /* Flash / Sheldon */
   --accent-yellow: #fde047;  /* Logo / Bazinga */
