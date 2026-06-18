@@ -28,6 +28,21 @@ class TBBTApp {
                 if(target) this.navigate(target);
             });
         });
+
+        // Theme Toggle Setup
+        const themeToggle = document.getElementById('theme-toggle');
+        if (themeToggle) {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            themeToggle.innerHTML = currentTheme === 'dark' ? '☀️' : '🌙';
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+                const newTheme = isDark ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                themeToggle.innerHTML = newTheme === 'dark' ? '☀️' : '🌙';
+            });
+        }
     }
 
     navigate(viewId) {
@@ -222,7 +237,7 @@ class TBBTApp {
                             <img src="${imgUrl}" class="media-img" alt="${c.actor}">
                         </div>
                         <div style="text-align: center;">
-                            <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.2rem; color: ${c.color || 'white'}">${c.character}</h3>
+                            <h3 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 0.2rem; color: ${c.color || 'var(--text-primary)'}">${c.character}</h3>
                             <p class="text-secondary">${c.actor}</p>
                         </div>
                     </div>

@@ -10,6 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script>
+        const savedTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    </script>
 </head>
 <body>
     
@@ -25,6 +29,7 @@
                 <li><a class="nav-link" data-target="cast">Cast & Crew</a></li>
                 <li><a class="nav-link" data-target="moments">Iconic Moments</a></li>
                 <li><a class="nav-link" data-target="bts">Behind the Scenes</a></li>
+                <li><button id="theme-toggle" class="btn" style="padding: 0.5rem; background: transparent; color: var(--text-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-size: 1.2rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; cursor: pointer;">🌙</button></li>
             </ul>
         </nav>
 
@@ -117,7 +122,7 @@
     <!-- Character Modal -->
     <div class="modal-overlay" id="character-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; padding: 2rem; overflow-y: auto;">
         <div class="modal" style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); max-width: 600px; width: 100%; position: relative;">
-            <button class="modal-close" onclick="app.closeModal()" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; color: white; font-size: 2rem; cursor: pointer;">&times;</button>
+            <button class="modal-close" onclick="app.closeModal()" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; color: var(--text-primary); font-size: 2rem; cursor: pointer;">&times;</button>
             <div id="modal-content"></div>
         </div>
     </div>
