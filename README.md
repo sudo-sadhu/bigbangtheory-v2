@@ -10,21 +10,34 @@ It is a modern open-source fan website for The Big Bang Theory built with vanill
 
 In an era of bloated web applications, **Big Bang Theory v2** stands as a testament to the power of a streamlined, vanilla technology stack. By avoiding heavy dependencies, we've achieved a blazing-fast user experience that feels native and premium. This project is designed not only as a comprehensive wiki for fans but also as a modern reference architecture for developers looking to build rich, state-driven interfaces without complex frameworks.
 
-## 🛠 The Vanilla Stack
+## 🛠️ The Vanilla Stack
 
 This application is engineered from the ground up using a pure, modern Vanilla Stack:
-- **HTML5**: Semantic, highly-structured markup ensuring optimal SEO and screen-reader compatibility.
-- **Vanilla CSS3**: Advanced modern CSS (variables, grid, flexbox, clamp, fluid typography) tailored to provide a cinematic and responsive visual aesthetic—no CSS frameworks required.
-- **Vanilla JavaScript (ES6+)**: Custom SPA routing, state management, and DOM manipulation, delivering a lightning-fast experience free from third-party framework overhead.
+- **HTML5**: Semantic, highly-structured markup ensuring optimal SEO and performance.
+- **Vanilla CSS3**: Modern custom CSS variables, grids, and flexboxes tailored to provide a cinematic, responsive visual layout.
+- **Vanilla JavaScript (ES6+)**: Custom SPA routing, state management, and DOM manipulation for a fast experience without third-party frameworks.
 
-## ✨ Highlight: Dark Mode & Accessibility (Engineered by AI Swarms)
+## 🌟 Highlight Features
 
-A core focus of Version 2 is an unparalleled commitment to accessibility and user preference. Through advanced engineering—powered by AI swarms—we've integrated robust features tailored to all users:
+### 🎬 Sortable Episode Database (IMDb Ratings)
+* Browse and search all 279 episodes of *The Big Bang Theory* across its 12 seasons.
+* Sort and rank episodes by their official IMDb ratings (highest to lowest, lowest to highest) overall or on a per-season basis to get a quick overview of the most popular episodes.
 
-- **Seamless Dark Mode:** A deeply integrated, locally-persisted dark mode scheme (`prefers-color-scheme` compatible) offering a low-strain cinematic viewing experience. The dark mode utilizes expertly crafted contrast ratios to ensure readability while preserving the premium aesthetic.
-- **Colorblind-Friendly Palettes:** Carefully chosen semantic colors and UI feedback indicators that maintain distinguishability for varying types of color vision deficiency.
-- **Blind & Screen-Reader Optimization:** Fully ARIA-compliant DOM structures, focus trapping in modals, and polite `aria-live` regions for dynamic content loading, ensuring visually impaired users have a flawless navigational experience.
-- **Keyboard Navigation:** Full keyboard operability (Tab, Enter, Space, Escape) across all interactive elements, modals, and custom routers.
+### 🎭 Main Cast Profiles & Trait Cards
+* Meet the main cast (Sheldon, Leonard, Penny, Raj, Howard, Bernadette, and Amy).
+* Read detailed character bios, catchphrases, fun facts, and personality traits.
+
+### 🎥 Iconic Moments
+* Revisit the most famous and memorable scenes from the series with quick summaries.
+
+### 🧠 Production Crew & Trivia
+* Explore behind-the-scenes production data, including the creative team (creators, directors, writers).
+* Discover fascinating fun facts about the series' development and writing.
+
+---
+
+## 👁️ Inclusive Experience & Modern Design
+The website features a custom, system-compatible Dark Mode alongside accessibility features (ARIA compliance, keyboard navigation, and colorblind-safe contrasts) so that all fans can easily browse the database.
 
 ## 🚀 Getting Started
 
