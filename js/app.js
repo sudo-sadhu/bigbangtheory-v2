@@ -217,7 +217,7 @@ class TBBTApp {
             MAIN_CAST.forEach(c => {
                 const imgUrl = tvmazeImages[c.actor] || '';
                 const html = `
-                    <div class="media-card" style="background: transparent; cursor: pointer;" onclick="app.openModal('${c.id}')">
+                    <div class="media-card" role="button" tabindex="0" aria-label="View details for ${c.character}" style="background: transparent; cursor: pointer;" onclick="app.openModal('${c.id}')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); app.openModal('${c.id}'); }">
                         <div class="media-img-wrapper" style="aspect-ratio: 2/3; border-radius: var(--radius-lg); overflow: hidden; margin-bottom: 1rem; border: 2px solid ${c.color || 'var(--glass-border)'}">
                             <img src="${imgUrl}" class="media-img" alt="${c.actor}">
                         </div>
@@ -287,6 +287,7 @@ class TBBTApp {
                 <div class="media-card" style="padding: 0; background: var(--bg-elevated);">
                     <div style="position: relative; width: 100%; padding-bottom: 56.25%;">
                         <iframe src="https://www.youtube.com/embed/${m.youtubeId}?modestbranding=1" 
+                                title="${m.title} video"
                                 style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
                                 allowfullscreen></iframe>
                     </div>
