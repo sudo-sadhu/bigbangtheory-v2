@@ -19,22 +19,22 @@
     
     <div id="app-container">
         <!-- Top Navigation -->
-        <nav class="top-nav">
-            <div class="brand" data-target="home">
+        <nav class="top-nav" aria-label="Main Navigation">
+            <div class="brand" data-target="home" role="button" tabindex="0" aria-label="Go to home">
                 TBBT<span>.</span>
             </div>
-            <ul class="nav-links">
-                <li><a class="nav-link active" data-target="home">Home</a></li>
-                <li><a class="nav-link" data-target="episodes">Episodes</a></li>
-                <li><a class="nav-link" data-target="cast">Cast & Crew</a></li>
-                <li><a class="nav-link" data-target="moments">Iconic Moments</a></li>
-                <li><a class="nav-link" data-target="bts">Behind the Scenes</a></li>
-                <li><button id="theme-toggle" class="btn" style="padding: 0.5rem; background: transparent; color: var(--text-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-size: 1.2rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; cursor: pointer;">🌙</button></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a class="nav-link active" data-target="home" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a class="nav-link" data-target="episodes" role="menuitem" tabindex="0">Episodes</a></li>
+                <li role="none"><a class="nav-link" data-target="cast" role="menuitem" tabindex="0">Cast & Crew</a></li>
+                <li role="none"><a class="nav-link" data-target="moments" role="menuitem" tabindex="0">Iconic Moments</a></li>
+                <li role="none"><a class="nav-link" data-target="bts" role="menuitem" tabindex="0">Behind the Scenes</a></li>
+                <li role="none"><button id="theme-toggle" class="btn" style="padding: 0.5rem; background: transparent; color: var(--text-primary); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); font-size: 1.2rem; display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; cursor: pointer;" aria-label="Toggle dark mode">🌙</button></li>
             </ul>
         </nav>
 
         <!-- Main Content (SPA Router injects here) -->
-        <main id="main-content">
+        <main id="main-content" aria-live="polite">
             
             <!-- HOME VIEW -->
             <div id="view-home" class="view-container active">
@@ -60,12 +60,12 @@
                     <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 2rem;">Episode Database</h1>
                     
                     <div class="controls-bar">
-                        <input type="text" id="ep-search" placeholder="Search episodes..." style="flex: 1;">
-                        <select id="ep-season-filter">
+                        <input type="text" id="ep-search" placeholder="Search episodes..." style="flex: 1;" aria-label="Search episodes">
+                        <select id="ep-season-filter" aria-label="Filter by season">
                             <option value="all">All Seasons</option>
                             <!-- Options JS injected -->
                         </select>
-                        <select id="ep-sort">
+                        <select id="ep-sort" aria-label="Sort episodes">
                             <option value="num-asc">Order: Season & Episode</option>
                             <option value="imdb-desc">IMDb Rating: High to Low</option>
                             <option value="imdb-asc">IMDb Rating: Low to High</option>
@@ -120,9 +120,9 @@
     </div>
 
     <!-- Character Modal -->
-    <div class="modal-overlay" id="character-modal" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; padding: 2rem; overflow-y: auto;">
+    <div class="modal-overlay" id="character-modal" role="dialog" aria-modal="true" aria-label="Modal dialog" style="display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 2000; align-items: center; justify-content: center; padding: 2rem; overflow-y: auto;">
         <div class="modal" style="background: var(--bg-surface); padding: 2rem; border-radius: var(--radius-lg); max-width: 600px; width: 100%; position: relative;">
-            <button class="modal-close" onclick="app.closeModal()" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; color: var(--text-primary); font-size: 2rem; cursor: pointer;">&times;</button>
+            <button class="modal-close" onclick="app.closeModal()" aria-label="Close modal" style="position: absolute; top: 1rem; right: 1rem; background: transparent; border: none; color: var(--text-primary); font-size: 2rem; cursor: pointer;">&times;</button>
             <div id="modal-content"></div>
         </div>
     </div>
