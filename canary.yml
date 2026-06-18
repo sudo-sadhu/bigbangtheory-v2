@@ -1,0 +1,4 @@
+strategy: canary
+rollout:
+  percentage: 1
+  target: feature-dark-mode
