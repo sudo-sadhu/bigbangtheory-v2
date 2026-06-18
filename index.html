@@ -15,16 +15,16 @@
     
     <div id="app-container">
         <!-- Top Navigation -->
-        <nav class="top-nav">
-            <div class="brand" data-target="home">
+        <nav class="top-nav" aria-label="Main Navigation">
+            <div class="brand" data-target="home" role="button" tabindex="0" aria-label="Go to home">
                 TBBT<span>.</span>
             </div>
-            <ul class="nav-links">
-                <li><a class="nav-link active" data-target="home">Home</a></li>
-                <li><a class="nav-link" data-target="episodes">Episodes</a></li>
-                <li><a class="nav-link" data-target="cast">Cast & Crew</a></li>
-                <li><a class="nav-link" data-target="moments">Iconic Moments</a></li>
-                <li><a class="nav-link" data-target="bts">Behind the Scenes</a></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a class="nav-link active" data-target="home" role="menuitem" tabindex="0">Home</a></li>
+                <li role="none"><a class="nav-link" data-target="episodes" role="menuitem" tabindex="0">Episodes</a></li>
+                <li role="none"><a class="nav-link" data-target="cast" role="menuitem" tabindex="0">Cast & Crew</a></li>
+                <li role="none"><a class="nav-link" data-target="moments" role="menuitem" tabindex="0">Iconic Moments</a></li>
+                <li role="none"><a class="nav-link" data-target="bts" role="menuitem" tabindex="0">Behind the Scenes</a></li>
             </ul>
         </nav>
 
