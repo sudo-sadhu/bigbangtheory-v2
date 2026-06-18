@@ -1,14 +1,14 @@
-# The Big Bang Theory V2: Official Database
+# Big Bang Theory v2
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Status](https://img.shields.io/badge/status-Active-success.svg)
 ![Version](https://img.shields.io/badge/version-2.0-brightgreen.svg)
 
-Welcome to **The Big Bang Theory V2**, the ultimate, cinematic single-page application database dedicated to the universe's greatest comedy series. With 12 Seasons, 279 Episodes, and countless "Bazingas", this project serves as a highly performant, accessible, and modern front-end application to explore the lore, cast, iconic moments, and behind-the-scenes trivia of the beloved show.
+It is a modern open-source fan website for The Big Bang Theory built with vanilla HTML, CSS, and JS.
 
 ## 🌟 Project Significance
 
-In an era of bloated web applications, **The Big Bang Theory V2** stands as a testament to the power of a streamlined, vanilla technology stack. By avoiding heavy dependencies, we've achieved a blazing-fast user experience that feels native and premium. This project is designed not only as a comprehensive wiki for fans but also as a modern reference architecture for developers looking to build rich, state-driven interfaces without complex frameworks.
+In an era of bloated web applications, **Big Bang Theory v2** stands as a testament to the power of a streamlined, vanilla technology stack. By avoiding heavy dependencies, we've achieved a blazing-fast user experience that feels native and premium. This project is designed not only as a comprehensive wiki for fans but also as a modern reference architecture for developers looking to build rich, state-driven interfaces without complex frameworks.
 
 ## 🛠 The Vanilla Stack
 
