@@ -55,12 +55,12 @@
                     <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 2rem;">Episode Database</h1>
                     
                     <div class="controls-bar">
-                        <input type="text" id="ep-search" placeholder="Search episodes..." style="flex: 1;">
-                        <select id="ep-season-filter">
+                        <input type="text" id="ep-search" placeholder="Search episodes..." style="flex: 1;" aria-label="Search episodes">
+                        <select id="ep-season-filter" aria-label="Filter by season">
                             <option value="all">All Seasons</option>
                             <!-- Options JS injected -->
                         </select>
-                        <select id="ep-sort">
+                        <select id="ep-sort" aria-label="Sort episodes">
                             <option value="num-asc">Order: Season & Episode</option>
                             <option value="imdb-desc">IMDb Rating: High to Low</option>
                             <option value="imdb-asc">IMDb Rating: Low to High</option>
