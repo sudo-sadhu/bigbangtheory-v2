@@ -4,7 +4,19 @@
 */
 
 :root {
-  /* Cinematic Color Palette */
+  /* Light Mode Color Palette (Default) */
+  --bg-base: #f9fafb;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f3f4f6;
+  --bg-transparent: rgba(249, 250, 251, 0.85);
+  
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+}
+
+[data-theme="dark"] {
+  /* Cinematic Dark Mode Color Palette */
   --bg-base: #0a0a0c;
   --bg-surface: #141417;
   --bg-elevated: #1e1e24;
@@ -13,6 +25,7 @@
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
   --text-muted: #71717a;
+}
 
   /* Show Accents (Comic Book inspired) */
   --accent-red: #e11d48;     /* Flash / Sheldon */
