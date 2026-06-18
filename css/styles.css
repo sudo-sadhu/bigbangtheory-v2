@@ -11,13 +11,13 @@
   --bg-transparent: rgba(10, 10, 12, 0.85);
   
   --text-primary: #ffffff;
-  --text-secondary: #a1a1aa;
-  --text-muted: #71717a;
+  --text-secondary: #d4d4d8;
+  --text-muted: #a1a1aa;
 
-  /* Show Accents (Comic Book inspired) */
-  --accent-red: #e11d48;     /* Flash / Sheldon */
-  --accent-yellow: #facc15;  /* Logo / Bazinga */
-  --accent-blue: #3b82f6;    /* Science / General */
+  /* Show Accents (Comic Book inspired) - Adjusted for WCAG contrast */
+  --accent-red: #fb7185;     /* Flash / Sheldon */
+  --accent-yellow: #fde047;  /* Logo / Bazinga */
+  --accent-blue: #60a5fa;    /* Science / General */
   
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
