@@ -336,3 +336,9 @@ select, input {
 select:focus, input:focus {
   border-color: var(--accent-red);
 }
+
+/* ── Accessibility: Keyboard Focus ── */
+*:focus-visible {
+  outline: 3px solid var(--accent-yellow);
+  outline-offset: 2px;
+}
